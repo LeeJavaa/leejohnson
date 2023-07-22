@@ -1,8 +1,18 @@
 import './globals.css'
 import type { Metadata } from 'next'
-import { Inter } from 'next/font/google'
+import { VT323, Poppins } from 'next/font/google'
 
-const inter = Inter({ subsets: ['latin'] })
+const vt323 = VT323({
+    weight: '400',
+    subsets: ['latin'],
+    variable: "--font-vt323",
+})
+
+const poppins = Poppins({
+    weight: ['300', '400', '500', '600', '700'],
+    subsets: ['latin'],
+    variable: "--font-poppins",
+})  
 
 export const metadata: Metadata = {
   title: 'Create Next App',
@@ -16,7 +26,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className={inter.className}>{children}</body>
+      <body className={`${vt323.variable}, ${poppins.variable} font-poppins`}>{children}</body>
     </html>
   )
 }
