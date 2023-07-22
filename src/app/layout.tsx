@@ -1,6 +1,6 @@
 import './globals.css'
 import type { Metadata } from 'next'
-import { VT323, Poppins } from 'next/font/google'
+import { VT323, Montserrat } from 'next/font/google'
 
 const vt323 = VT323({
     weight: '400',
@@ -8,10 +8,10 @@ const vt323 = VT323({
     variable: "--font-vt323",
 })
 
-const poppins = Poppins({
+const montserrat = Montserrat({
     weight: ['300', '400', '500', '600', '700'],
     subsets: ['latin'],
-    variable: "--font-poppins",
+    variable: "--font-montserrat",
 })  
 
 export const metadata: Metadata = {
@@ -26,7 +26,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className={`${vt323.variable}, ${poppins.variable} font-poppins`}>{children}</body>
+      <body className={`${montserrat.variable} ${vt323.variable} font-montserrat bg-black text-white`}>{children}</body>
     </html>
   )
 }
