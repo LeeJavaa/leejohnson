@@ -1,3 +1,4 @@
+import { Navbar } from '@/components/Navbar'
 import './globals.css'
 import type { Metadata } from 'next'
 import { VT323, Montserrat } from 'next/font/google'
@@ -26,7 +27,10 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className={`${montserrat.variable} ${vt323.variable} font-montserrat bg-black text-white`}>{children}</body>
+      <body className={`${montserrat.variable} ${vt323.variable} font-montserrat bg-black text-white`}>
+        <Navbar />
+        {children}
+      </body>
     </html>
   )
 }
