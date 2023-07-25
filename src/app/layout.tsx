@@ -2,7 +2,6 @@ import { Navbar } from '@/components/Navbar'
 import './globals.css'
 import type { Metadata } from 'next'
 import { VT323, Montserrat } from 'next/font/google'
-import { Footer } from '@/components/Footer'
 
 const vt323 = VT323({
     weight: '400',
@@ -31,7 +30,6 @@ export default function RootLayout({
       <body className={`${montserrat.variable} ${vt323.variable} font-montserrat bg-black text-white`}>
         <Navbar />
         {children}
-        <Footer />
       </body>
     </html>
   )
