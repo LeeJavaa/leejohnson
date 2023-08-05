@@ -1,3 +1,24 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+body::before,
+body::after {
+  position: absolute;
+  left: 0;
+  top: 0;
+  content: "";
+  width: 100%;
+  height: 100%;
+  z-index: 20;
+  opacity: 20%;
+}
+
+body::before {
+  background: #000000;
+  filter: url(#noise);
+}
+
+* {
+  overflow-y: hidden;
+}
