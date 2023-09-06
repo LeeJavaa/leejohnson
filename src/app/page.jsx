@@ -1,10 +1,12 @@
 import "./globals.css";
-import Block from "../components/Block";
+import Block from "@/components/Block";
 
 export default function Home() {
   return (
     <main>
-      <div className="w-100% h-screen grid grid-cols-10 grid-rows-5">
+      <div className="w-100% h-screen bg-gradient-to-br from-dark to-veryDark grid grid-cols-10 grid-rows-5">
+        {/* First 10 */}
+        <Block text={"LEE JOHNSON"} />
         <Block />
         <Block />
         <Block />
@@ -14,40 +16,46 @@ export default function Home() {
         <Block />
         <Block />
         <Block />
+        {/* Second 10 */}
+        <Block />
+        <Block />
+        <Block text={"ABOUT"} />
+        <Block />
+        <Block />
+        <Block />
+        <Block />
+        <Block />
+        <Block text={"PROJECTS"} link={"https://github.com/LeeJavaa"} />
+        <Block />
+        {/* Third 10 */}
+        <Block />
+        <Block />
+        <Block />
+        <Block />
+        <Block text={"RESUME"} link={"https://github.com/LeeJavaa"} />
+        <Block />
+        <Block />
+        <Block />
+        <Block />
+        <Block />
+        {/* Fourth 10 */}
         <Block />
         <Block />
         <Block />
         <Block />
         <Block />
         <Block />
+        <Block text={"CONTACT"} />
         <Block />
         <Block />
         <Block />
+        {/* Fifth 10 */}
         <Block />
         <Block />
-        <Block />
-        <Block />
-        <Block />
-        <Block />
-        <Block />
-        <Block />
-        <Block />
-        <Block />
-        <Block />
-        <Block />
-        <Block />
-        <Block />
-        <Block />
-        <Block />
-        <Block />
-        <Block />
-        <Block />
-        <Block />
-        <Block />
-        <Block />
-        <Block />
-        <Block />
-        <Block />
+        <Block
+          text={"LINKEDIN"}
+          link={"https://www.linkedin.com/in/lee-johnson-engineering/"}
+        />
         <Block />
         <Block />
         <Block />
@@ -56,7 +64,7 @@ export default function Home() {
         <Block />
         <Block />
       </div>
-      <svg>
+      {/* <svg>
         <filter id="noise">
           <feTurbulence id="turbulence">
             <animate
@@ -71,7 +79,7 @@ export default function Home() {
             ></feDisplacementMap>
           </feTurbulence>
         </filter>
-      </svg>
+      </svg> */}
     </main>
   );
 }

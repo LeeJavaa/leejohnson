@@ -1,8 +1,29 @@
+import Link from "next/link";
 import React from "react";
 
-const Block = () => {
+const Block = ({ text, link }) => {
   return (
-    <div className="w-full h-full border-[0.25px] border-white border-opacity-10 bg-slate-950 hover:bg-slate-800 z-40 duration-500 ease-in" />
+    <>
+      {link ? (
+        <a href={link} target="_blank" className="z-40">
+          <div
+            className={`w-full h-full bg-white bg-opacity-0 hover:bg-opacity-10 border border-white border-opacity-[3%] duration-1000 ease-out ${
+              text == "LEE JOHNSON" ? "" : text ? "hover:cursor-pointer" : ""
+            }`}
+          >
+            <p className={`pl-2 pt-1 text-xs`}>{text}</p>
+          </div>
+        </a>
+      ) : (
+        <div
+          className={`w-full h-full bg-white bg-opacity-0 hover:bg-opacity-10 border border-white border-opacity-[3%] duration-1000 ease-out z-40 ${
+            text == "LEE JOHNSON" ? "" : text ? "hover:cursor-pointer" : ""
+          }`}
+        >
+          <p className={`pl-2 pt-1 text-xs`}>{text}</p>
+        </div>
+      )}
+    </>
   );
 };
 
