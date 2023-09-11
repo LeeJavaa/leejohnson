@@ -10,6 +10,8 @@ module.exports = {
       colors: {
         veryDark: "#050505",
         dark: "#101010",
+        leeRed: "#A10000",
+        light: "#D9D9D9",
       },
       fontFamily: {
         raleway: ["var(--font-raleway)"],
