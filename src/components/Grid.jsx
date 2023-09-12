@@ -3,10 +3,12 @@ import Block from "@/components/Block";
 import { useState, useEffect } from "react";
 
 export default function Grid({ items }) {
-  const [windowWidth, setWindowWidth] = useState(window.innerWidth);
+  const [windowWidth, setWindowWidth] = useState(1920);
 
   // Add an event listener to update the windowWidth state when the window is resized.
   useEffect(() => {
+    setWindowWidth(window.innerWidth);
+
     function handleResize() {
       setWindowWidth(window.innerWidth);
     }
