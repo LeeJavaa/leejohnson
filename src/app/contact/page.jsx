@@ -3,7 +3,7 @@ import Grid from "@/components/Grid";
 export default function Home() {
   return (
     <main className="w-full h-screen">
-      <div className="absolute left-0 right-0 bottom-0 top-0 grid grid-cols-2 lg:grid-cols-8 2xl:grid-cols-10 grid-rows-5">
+      <div className="absolute left-0 right-0 bottom-0 top-0 grid grid-cols-2 lg:grid-cols-8 2xl:grid-cols-10 grid-rows-5 animate-fadeInLong">
         <h1 className=" col-start-1 lg:col-start-3 2xl:col-start-4 row-span-1 self-end mx-4 z-50">
           CONTACT ME
         </h1>
@@ -27,8 +27,9 @@ export default function Home() {
             placeholder="now impress me"
           ></textarea>
           <button
-            className="bg-leeRed w-36 h-11 flex items-center justify-center mx-auto hover:cursor-pointer hover:bg-white hover:text-veryDark duration-100 ease-in"
+            className="bg-leeRed w-36 h-11 flex items-center justify-center mx-auto hover:cursor-pointer hover:bg-white hover:text-veryDark duration-100 ease-in animate-fadeIn opacity-0"
             type="submit"
+            style={{ animationFillMode: "forwards", animationDelay: "1s" }}
           >
             SEND
           </button>
