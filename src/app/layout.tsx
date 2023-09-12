@@ -1,6 +1,7 @@
 import "./globals.css";
 import type { Metadata } from "next";
 import { VT323, Montserrat, Raleway, Noto_Serif } from "next/font/google";
+import { LoadingProvider } from "@/context/LoadingContext";
 
 const raleway = Raleway({
   weight: "400",
@@ -29,7 +30,7 @@ export default function RootLayout({
       <body
         className={`${raleway.variable} ${noto_serif.variable} font-noto bg-black text-white`}
       >
-        {children}
+        <LoadingProvider>{children}</LoadingProvider>
       </body>
     </html>
   );
