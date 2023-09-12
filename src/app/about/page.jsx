@@ -3,9 +3,11 @@ import Grid from "@/components/Grid";
 export default function Home() {
   return (
     <main className="w-full h-screen">
-      <div className="absolute left-0 right-0 bottom-0 top-0 grid grid-cols-10 grid-rows-5">
-        <h1 className=" col-start-4 row-span-1 self-end mx-4 z-50">ABOUT ME</h1>
-        <div className=" row-start-2 row-span-3 col-start-4 col-end-8 self-center flex flex-col gap-11 mx-4 z-50">
+      <div className="absolute left-0 right-0 bottom-0 top-0 grid grid-cols-2 lg:grid-cols-8 2xl:grid-cols-10 grid-rows-5">
+        <h1 className=" col-start-1 lg:col-start-3 2xl:col-start-4 row-span-1 self-end mx-4 z-50">
+          ABOUT ME
+        </h1>
+        <div className=" row-start-2 row-span-4 lg:row-span-3 col-start-1 col-end-3 lg:col-start-3 2xl:col-start-4 lg:col-end-7 2xl:col-end-8 self-start lg:self-center pt-10 lg:pt-0 flex flex-col gap-5 lg:gap-6 2xl:gap-11 mx-4 z-50 text-sm lg:text-base">
           <p>
             I am an electrical engineer by training and a software engineer by
             passion.
