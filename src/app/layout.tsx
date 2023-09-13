@@ -30,6 +30,7 @@ export default function RootLayout({
       <body
         className={`${raleway.variable} ${noto_serif.variable} font-noto bg-black text-white`}
       >
+        <div className="grain"></div>
         <LoadingProvider>{children}</LoadingProvider>
       </body>
     </html>
