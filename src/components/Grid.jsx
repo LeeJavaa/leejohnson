@@ -56,9 +56,7 @@ export default function Grid({ items }) {
           <Block />
           <Block
             text={`${items.includes("projects") ? "PROJECTS" : ""}`}
-            linkExternal={`${
-              items.includes("projects") ? "https://github.com/LeeJavaa" : ""
-            }`}
+            linkInternal={`${items.includes("projects") ? "/projects" : ""}`}
           />
           <Block />
           {/* Third 10 */}
@@ -139,9 +137,7 @@ export default function Grid({ items }) {
           <Block />
           <Block
             text={`${items.includes("projects") ? "PROJECTS" : ""}`}
-            linkExternal={`${
-              items.includes("projects") ? "https://github.com/LeeJavaa" : ""
-            }`}
+            linkInternal={`${items.includes("projects") ? "/projects" : ""}`}
           />
           <Block />
           {/* Third 8 */}
@@ -205,9 +201,7 @@ export default function Grid({ items }) {
           />
           <Block
             text={`${items.includes("projects") ? "PROJECTS" : ""}`}
-            linkExternal={`${
-              items.includes("projects") ? "https://github.com/LeeJavaa" : ""
-            }`}
+            linkInternal={`${items.includes("projects") ? "/projects" : ""}`}
           />
           {/* Third 2 */}
           <Block
