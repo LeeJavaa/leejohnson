@@ -23,7 +23,7 @@ module.exports = {
       animation: {
         fadeIn: "fade 1s linear",
         fadeInLong: "fade 2s linear",
-        textFlip: "flip 2s infinite",
+        textFlip: "flip 1.5s linear",
         borderFade: "borderFadeIn 3s linear",
       },
       keyframes: {
