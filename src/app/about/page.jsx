@@ -7,10 +7,7 @@ export default function Home() {
         <h1 className=" col-start-1 lg:col-start-3 2xl:col-start-4 row-span-1 self-end mx-4 z-50 animate-fadeIn">
           ABOUT ME
         </h1>
-        <div
-          className=" row-start-2 row-span-4 lg:row-span-3 col-start-1 col-end-3 lg:col-start-3 2xl:col-start-4 lg:col-end-7 2xl:col-end-8 self-start lg:self-center pt-4 lg:pt-0 flex flex-col gap-5 lg:gap-6 2xl:gap-11 mx-4 z-50 text-sm lg:text-base animate-fadeInLong opacity-0"
-          style={{ animationFillMode: "forwards", animationDelay: "0.5s" }}
-        >
+        <div className=" row-start-2 row-span-4 lg:row-span-3 col-start-1 col-end-3 lg:col-start-3 2xl:col-start-4 lg:col-end-7 2xl:col-end-8 self-start lg:self-center pt-4 lg:pt-0 flex flex-col gap-5 lg:gap-6 2xl:gap-11 mx-4 z-50 text-sm lg:text-base animate-fadeIn">
           <p>
             My name is Lee Johnson, I am an electrical and software engineer by
             training, but mostly by passion. I enjoy solving difficult and
@@ -34,10 +31,7 @@ export default function Home() {
             invaluable knowledge about engineering in industry.
           </p>
           <a href="https://github.com/LeeJavaa" target="_blank">
-            <div
-              className="bg-leeRed w-36 h-11 flex items-center justify-center mx-auto hover:cursor-pointer hover:bg-white hover:text-veryDark duration-100 ease-in animate-fadeIn opacity-0"
-              style={{ animationFillMode: "forwards", animationDelay: "1s" }}
-            >
+            <div className="bg-leeRed w-36 h-11 flex items-center justify-center mx-auto hover:cursor-pointer hover:bg-white hover:text-veryDark duration-100 ease-in">
               RESUME
             </div>
           </a>
