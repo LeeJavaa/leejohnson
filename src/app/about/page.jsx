@@ -30,7 +30,7 @@ export default function Home() {
             me to spend summers interning at startups, where I&apos;ve gained
             invaluable knowledge about engineering in industry.
           </p>
-          <a href="https://github.com/LeeJavaa" target="_blank">
+          <a href={"/files/resume.pdf"} target="_blank">
             <div className="bg-leeRed w-36 h-11 flex items-center justify-center mx-auto hover:cursor-pointer hover:bg-white hover:text-veryDark duration-100 ease-in">
               RESUME
             </div>

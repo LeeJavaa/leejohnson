@@ -67,7 +67,7 @@ export default function Grid({ items }) {
           <Block
             text={`${items.includes("resume") ? "RESUME" : ""}`}
             linkExternal={`${
-              items.includes("resume") ? "https://github.com/LeeJavaa" : ""
+              items.includes("resume") ? "/files/resume.pdf" : ""
             }`}
           />
           <Block />
@@ -147,7 +147,7 @@ export default function Grid({ items }) {
           <Block
             text={`${items.includes("resume") ? "RESUME" : ""}`}
             linkExternal={`${
-              items.includes("resume") ? "https://github.com/LeeJavaa" : ""
+              items.includes("resume") ? "/files/resume.pdf" : ""
             }`}
           />
           <Block />
@@ -201,13 +201,15 @@ export default function Grid({ items }) {
           />
           <Block
             text={`${items.includes("projects") ? "PROJECTS" : ""}`}
-            linkInternal={`${items.includes("projects") ? "/projects" : ""}`}
+            linkExternal={`${
+              items.includes("projects") ? "https://github.com/LeeJavaa" : ""
+            }`}
           />
           {/* Third 2 */}
           <Block
             text={`${items.includes("resume") ? "RESUME" : ""}`}
             linkExternal={`${
-              items.includes("resume") ? "https://github.com/LeeJavaa" : ""
+              items.includes("resume") ? "/files/resume.pdf" : ""
             }`}
           />
           <Block />
