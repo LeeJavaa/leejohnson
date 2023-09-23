@@ -16,7 +16,7 @@ const noto_serif = Noto_Serif({
 });
 
 export const metadata: Metadata = {
-  title: "- love lee 🐉",
+  title: " lee johnson 🐉",
   description:
     "The portfolio of Lee Johnson, a Cape Town based Electrical and Software Engineer working at the intersection of difficult problems. Available for hire.",
 };
