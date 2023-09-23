@@ -67,7 +67,7 @@ export default function Grid({ items }) {
           <Block
             text={`${items.includes("resume") ? "RESUME" : ""}`}
             linkExternal={`${
-              items.includes("resume") ? "/files/resume.pdf" : ""
+              items.includes("resume") ? "/files/Resume.pdf" : ""
             }`}
           />
           <Block />
@@ -147,7 +147,7 @@ export default function Grid({ items }) {
           <Block
             text={`${items.includes("resume") ? "RESUME" : ""}`}
             linkExternal={`${
-              items.includes("resume") ? "/files/resume.pdf" : ""
+              items.includes("resume") ? "/files/Resume.pdf" : ""
             }`}
           />
           <Block />
@@ -209,7 +209,7 @@ export default function Grid({ items }) {
           <Block
             text={`${items.includes("resume") ? "RESUME" : ""}`}
             linkExternal={`${
-              items.includes("resume") ? "/files/resume.pdf" : ""
+              items.includes("resume") ? "/files/Resume.pdf" : ""
             }`}
           />
           <Block />
