@@ -32,7 +32,7 @@ export default function Home() {
         <a
           href={"https://github.com/whatsbuzzing/mobileApp/"}
           target="_blank"
-          className=" col-start-2 row-start-3 col-span-1 row-span-1 lg:col-start-6 2xl:col-start-7 px-4 pt-2 px-4 pt-2 hover:underline hover:cursor-pointer z-50 bg-[url('../images/whatsbuzzing-thumbnail.png')] bg-contain bg-center grayscale hover:grayscale-0 duration-500"
+          className=" col-start-2 row-start-3 col-span-1 row-span-1 lg:col-start-6 2xl:col-start-7 px-4 pt-2 hover:underline hover:cursor-pointer z-50 bg-[url('../images/whatsbuzzing-thumbnail.png')] bg-contain bg-center grayscale hover:grayscale-0 duration-500"
         >
           <p>whats buzzing?</p>
         </a>
